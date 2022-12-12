@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MNCPlay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      @media (max-width: 767.98px) {
+        .hero {
+          padding-top: 130px !important;
+        }
+
+        .img-hero {
+          display: none;
+        }
+      }
+
+      .icons-google-size-why {
+        font-size: 80px;
+      }
+
+      .desc-paket {
+        font-size: 0.7em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo-mncplay-white.png" alt="" width="100"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link fw-semibold" aria-current="page" href="#home"
+              >Home</a
+            >
+            <a class="nav-link fw-semibold" href="#about">About</a>
+            <a class="nav-link fw-semibold" href="#why">Why</a>
+            <a class="nav-link fw-semibold" href="#package">Package</a>
+            <a class="nav-link fw-semibold" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="bg-dark text-white pt-5 pb-5 hero">
+      <section class="container mt-5" id="home">
+        <div class="row">
+          <div
+            class="col-md d-flex justify-content-center align-items-center flex-column"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h1 class="fw-bolder display-6 align-self-start">
+              Menangkan GAMEMU
+            </h1>
+            <h1 class="fw-bolder display-6 align-self-start">
+              bersama MNCPlay
+            </h1>
+            <p>
+              Buktikan Kebebasan Kamu Buat Nge-game Makin GGWP Dan Tinggalkan
+              Ngelag Saat Bermain Dengan Fitur Terbaik Produk Gaming MNCPlay.
+            </p>
+            <a href="" class="btn btn-primary align-self-start"
+              >Subscribe Now</a
+            >
+          </div>
+
+          <div
+            class="col-md d-flex justify-content-center align-items-center flex-column"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <img
+              src="img/hero.png"
+              alt=""
+              class="img-fluid img-hero"
+              width="500"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="mb-5">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#212529"
+          fill-opacity="1"
+          d="M0,128L0,0L120,0L120,160L240,160L240,128L360,128L360,288L480,288L480,96L600,96L600,224L720,224L720,256L840,256L840,96L960,96L960,96L1080,96L1080,32L1200,32L1200,192L1320,192L1320,96L1440,96L1440,0L1320,0L1320,0L1200,0L1200,0L1080,0L1080,0L960,0L960,0L840,0L840,0L720,0L720,0L600,0L600,0L480,0L480,0L360,0L360,0L240,0L240,0L120,0L120,0L0,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="bg-body">
+      <section class="container about" id="about">
+        <div class="border-bottom border-3 border-dark">
+          <h3 class="fw-bold">Tentang Kami</h3>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md" data-aos="fade-right" data-aos-duration="1000">
+            <img
+              src="img/unsplash-resize-about.jpg"
+              class="img-fluid rounded"
+              alt="About US by UNSPLASH"
+            />
+          </div>
+          <div
+            class="col-md mt-3 d-flex align-items-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <p>
+              MNC Play didirikan pada Januari 2013, PT.MNC Kabel Mediacom (MKM)
+              adalah bagian dari GLOBAL MEDIACOM (MNC GROUP), yang berfokus
+              sebagai penyedia layanan jaringan berbasis Internet Fiber Optic.
+              <br />
+              <br />
+
+              Kami selalu berkomitmen untuk fokus dalam meningkatkan kualitas
+              layanan serta membantu Indonesia dalam penyediaan komunikasi data
+              terbaik serta hiburan Multimedia Interaktif berbasis Internet
+              Broadband.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- WHY -->
+    <div class="bg-body">
+      <section class="container about mt-5" id="why">
+        <div class="border-bottom border-3 border-dark">
+          <h3 class="fw-bold">Kenapa harus Kami</h3>
+        </div>
+        <div class="row text-center">
+          <div
+            class="col-md-3 mt-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="card h-100 border border-dark border-2 border border-dark border-2"
+            >
+              <div
+                class="card-body d-flex justify-content-center align-items-center flex-column"
+              >
+                <i class="material-icons icons-google-size-why mb-4">cable</i>
+                <p class="fw-bold">100% Fiber ke Rumah</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mt-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <div class="card h-100 border border-dark border-2">
+              <div
+                class="card-body d-flex justify-content-center align-items-center flex-column"
+              >
+                <i
+                  class="material-icons icons-google-size-why mb-4"
+                  style="transform: rotate(90deg)"
+                  >sync_alt</i
+                >
+                <p class="fw-bold">Download & Upload Simetris</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mt-4"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="card h-100 border border-dark border-2">
+              <div
+                class="card-body d-flex justify-content-center align-items-center flex-column"
+              >
+                <i class="material-icons icons-google-size-why mb-4">router</i>
+                <p class="fw-bold">Gratis Sewa Modem</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-3 mt-4"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
+            <div class="card h-100 border border-dark border-2">
+              <div
+                class="card-body d-flex justify-content-center align-items-center flex-column"
+              >
+                <i class="material-icons icons-google-size-why mb-4">
+                  all_inclusive</i
+                >
+                <p class="fw-bold">No FUP / Fair Usage Policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="mt-3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#212529"
+          fill-opacity="1"
+          d="M0,128L0,0L120,0L120,160L240,160L240,128L360,128L360,288L480,288L480,96L600,96L600,224L720,224L720,256L840,256L840,96L960,96L960,96L1080,96L1080,32L1200,32L1200,192L1320,192L1320,96L1440,96L1440,320L1320,320L1320,320L1200,320L1200,320L1080,320L1080,320L960,320L960,320L840,320L840,320L720,320L720,320L600,320L600,320L480,320L480,320L360,320L360,320L240,320L240,320L120,320L120,320L0,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="bg-dark text-white pt-5 pb-5">
+      <section class="container" id="package">
+        <div class="text-center">
+          <h3 class="fw-bold">Paket Kami</h3>
+        </div>
+        <div class="row mt-4">
+          <div
+            class="col-md mt-3"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="card h-100 bg-dark border border-2 border-primary">
+              <div class="card-body text-center">
+                <div class="border-bottom">
+                  <h4 class="fw-bold">30 Mbps</h4>
+                </div>
+                <div class="mt-4 fs-6">
+                  <p>100% fiber optic</p>
+                  <p>No FUP</p>
+                  <p>Android Set Top Box</p>
+                </div>
+                <h4 class="mt-5 fw-semibold">Rp. 339.000/bulan</h4>
+                <a class="btn btn-light mt-4 mb-3 fw-semibold">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md mt-3"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="card h-100 bg-primary">
+              <div class="card-body text-center">
+                <span class="badge text-bg-danger mb-2">Terpopuler</span>
+                <div class="border-bottom">
+                  <h4 class="fw-bold">50 Mbps</h4>
+                </div>
+                <div class="mt-4 fs-6">
+                  <p>100% fiber optic</p>
+                  <p>No FUP</p>
+                  <p>Android Set Top Box</p>
+                </div>
+                <h4 class="mt-5 fw-semibold">Rp. 459.000/bulan</h4>
+                <a class="btn btn-light mt-4 mb-3 fw-semibold">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md mt-3"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <div class="card h-100 bg-dark border border-2 border-primary">
+              <div class="card-body text-center">
+                <div class="border-bottom">
+                  <h4 class="fw-bold">70 Mbps</h4>
+                </div>
+                <div class="mt-4 fs-6">
+                  <p>100% fiber optic</p>
+                  <p>No FUP</p>
+                  <p>Android Set Top Box</p>
+                </div>
+                <h4 class="mt-5 fw-semibold">Rp. 629.000/bulan</h4>
+                <a class="btn btn-light mt-4 mb-3 fw-semibold">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md mt-3"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
+            <div class="card h-100 bg-dark border border-2 border-primary">
+              <div class="card-body text-center">
+                <div class="border-bottom">
+                  <h4 class="fw-bold">100 Mbps</h4>
+                </div>
+                <div class="mt-4 fs-6">
+                  <p>100% fiber optic</p>
+                  <p>No FUP</p>
+                  <p>Android Set Top Box</p>
+                </div>
+                <h4 class="mt-5 fw-semibold">Rp. 709.000/bulan</h4>
+                <a class="btn btn-light mt-4 mb-3 fw-semibold">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="bg-dark text-white pt-3 pb-4">
+      <section class="container" id="contact">
+        <div class="text-center">
+          <h3 class="fw-bold">Hubungi Kami</h3>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md" data-aos="fade-up" data-aos-duration="1000">
+            <form method="POST">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Nama Lengkap</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Budhi Doremi"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="admin@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Pesan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="mb-3 text-end">
+                <button type="submit" class="btn btn-outline-light">
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md">
+            <div class="border-bottom border-light">
+              <h5 class="fw-semibold">Lokasi</h5>
+            </div>
+            <div class="mt-4" data-aos="fade-up" data-aos-duration="2000">
+              <div class="row">
+                <div class="col-1">
+                  <span class="material-icons"> location_on </span>
+                </div>
+                <div class="col-11">
+                  <p>
+                    MNC Tower, Lantai 11, 12A, 14 Jl. Kebon Sirih No. 17-19,
+                    Gondangdia, Jakarta Pusat
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <span class="material-icons"> schedule </span>
+                </div>
+                <div class="col-11">
+                  <p>Senin – Jumat | 08:30 – 17:00</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <span class="material-icons"> call </span>
+                </div>
+                <div class="col-11">
+                  <p>1500121</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <span class="material-icons"> support_agent </span>
+                </div>
+                <div class="col-11">
+                  <p>Whatsapp Interactive : +62-899-1500-686 (Text Only)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <span class="material-icons"> email </span>
+                </div>
+                <div class="col-11">
+                  <p>ccare.mncplay@mncgroup.com)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="bg-body text-center mt-4">
+      <p>&copy; 2022 MNCGroup</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
