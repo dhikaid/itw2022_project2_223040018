@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bhadrika/public_html/tubesitw22.bhadrikais.my.id
+    - export DEPLOYPATH=/home/bhadrika/public_html/tubesitw22.bhadrikais.my.id/company
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
