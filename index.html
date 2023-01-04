@@ -30,6 +30,32 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- LOADING -->
+    <div class="load-page">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="spinner-grow text-secondary mx-sm-3" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary mx-sm-3" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary mx-sm-3" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="progress mt-4">
+          <div
+            class="progress-bar bg-secondary"
+            role="progressbar"
+            aria-label="Success example"
+            style="width: 0%"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
       <div class="container">
@@ -69,6 +95,7 @@
             class="col-md d-flex justify-content-center align-items-center flex-column"
             data-aos="fade-up"
             data-aos-duration="1000"
+            data-aos-delay="2500"
           >
             <h1 class="fw-bolder display-6 align-self-start">
               Menangkan GAMEMU
@@ -91,6 +118,7 @@
             class="col-md d-flex justify-content-center align-items-center flex-column"
             data-aos="fade-down"
             data-aos-duration="1000"
+            data-aos-delay="2500"
           >
             <img
               src="img/hero.png"
@@ -376,7 +404,17 @@
         </div>
         <div class="row mt-4">
           <div class="col-md" data-aos="fade-up" data-aos-duration="1000">
-            <form method="POST">
+            <div
+              class="alert alert-success d-none"
+              id="alertcontact"
+              role="alert"
+            >
+              <span class="fw-bold">
+                Terimakasih sudah tertarik pada product kami!
+              </span>
+              Kami akan membalas secepatnya.
+            </div>
+            <form method="POST" name="contact-form">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"
                   >Nama Lengkap</label
@@ -384,8 +422,9 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="namecontact"
                   placeholder="Budhi Doremi"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -395,8 +434,9 @@
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleFormControlInput1"
+                  id="emailcontact"
                   placeholder="admin@example.com"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -405,13 +445,31 @@
                 >
                 <textarea
                   class="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="pesancontact"
                   rows="3"
+                  required
                 ></textarea>
               </div>
               <div class="mb-3 text-end">
-                <button type="submit" class="btn btn-outline-light">
+                <button
+                  id="submitcontact"
+                  type="submit"
+                  class="btn btn-outline-light"
+                >
                   Kirim
+                </button>
+                <button
+                  class="btn btn-light d-none"
+                  type="button"
+                  id="loadingcontactbtn"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  Loading...
                 </button>
               </div>
             </form>
@@ -485,5 +543,7 @@
         once: true,
       });
     </script>
+    <!-- my js -->
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@ body {
 @media (max-width: 767.98px) {
   .hero {
     padding-top: 130px !important;
+    height: 90vh;
   }
 
   .img-hero {
