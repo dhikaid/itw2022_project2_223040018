@@ -22,3 +22,7 @@ body {
 .desc-paket {
   font-size: 0.7em;
 }
+
+textarea {
+  resize: none;
+}
