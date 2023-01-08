@@ -6,6 +6,7 @@ const pesanContact = document.querySelector("#pesancontact");
 const tombolContact = document.querySelector("#submitcontact");
 const loadtombolContact = document.querySelector("#loadingcontactbtn");
 const alertContact = document.querySelector("#alertcontact");
+const contents = document.querySelector(".contents");
 
 // load
 window.addEventListener("load", (event) => {
@@ -16,32 +17,32 @@ window.addEventListener("load", (event) => {
   document.querySelector(".load-page").style.visibility = "visible";
 
   // progress bar
-  const progressBar = document.querySelector(".progress-bar");
+  // const progressBar = document.querySelector(".progress-bar");
 
-  progressBar.style.transition = "width";
-  progressBar.style.transitionDuration = "2s";
-  progressBar.style.width = "100%";
+  // progressBar.style.transition = "width";
+  // progressBar.style.transitionDuration = "2s";
+  // progressBar.style.width = "100%";
 
   // kirim ip
-  fetch("https://ipapi.co/json/")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data.ip);
-      discord_message(
-        2,
-        "Seseorang mengunjungi website anda!",
-        "LINK :\n" +
-          window.location.href +
-          "\nIP :\n" +
-          data.ip +
-          "\nKOTA :\n" +
-          data.city +
-          "\nISP :\n" +
-          data.org +
-          "\nDEVICE :\n" +
-          navigator.userAgent
-      );
-    });
+  // fetch("https://ipapi.co/json/")
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     console.log(data.ip);
+  //     discord_message(
+  //       2,
+  //       "Seseorang mengunjungi website anda!",
+  //       "LINK :\n" +
+  //         window.location.href +
+  //         "\nIP :\n" +
+  //         data.ip +
+  //         "\nKOTA :\n" +
+  //         data.city +
+  //         "\nISP :\n" +
+  //         data.org +
+  //         "\nDEVICE :\n" +
+  //         navigator.userAgent
+  //     );
+  //   });
 
   setTimeout(function () {
     stopLoad();
@@ -58,6 +59,7 @@ window.addEventListener("load", (event) => {
 // function stopload
 function stopLoad() {
   var loadPage = document.querySelector(".load-page");
+  contents.classList.remove("d-none");
   var fadeEffect = setInterval(function () {
     if (!loadPage.style.opacity) {
       loadPage.style.opacity = 1;
@@ -67,7 +69,10 @@ function stopLoad() {
     } else {
       clearInterval(fadeEffect);
     }
-  }, 15);
+  }, 1);
+  AOS.init({
+    once: true,
+  });
 }
 
 // kirim contact
